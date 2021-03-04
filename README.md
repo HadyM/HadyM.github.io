@@ -48,8 +48,6 @@ For more inspiration, here are some personal sites from alums!
 
 ## Trello Board
 
-My Trello Board [FSW Personal Site Project Hady Mohamed 7.1 Days](https://trello.com/b/cD9bI2pi/fsw-personal-site-project).
-
 For this project, we will give you a blank Trello board and you will be responsible for creating cards this time.
 
 Start by copying [this starter Trello board](https://trello.com/b/tTFpk77m/fsw-personal-site-project).
@@ -77,7 +75,7 @@ Also notice that you can set **DEADLINES** for a card, which may help you manage
 
 When you are done, replace the link below with the link to your Trello board:
 
-[Replace this link with the link to your board](https://trello.com/b/tTFpk77m/fsw-personal-site-project)
+My Trello Board [FSW Personal Site Project Hady Mohamed 7.1 Days](https://trello.com/b/cD9bI2pi/fsw-personal-site-project)
 
 ## User Stories
 
