@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title> FSW Personal Site Project Hady Mohamed</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FSW Personal Site Project Hady Mohamed</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <script src="./index.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+            <img src="./images/devhady.png" alt="Profile Picture">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">My projects</a></li>
+            </ul>
+        </nav>
+    </header>
 
-</body>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Hady Mohamed</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
+        <img src="./images/HadyProfile.jpeg" alt="A picture of Hady Mohamed smiling">
+    </section>
+
+    <!-- Skills -->
+    <section class="my-skills" id="skills">
+        <h2 class="section__title section__title--skills">What I do</h2>
+        <div class="skills">
+            <div class="serviceskill">
+                <h3>Javascript</h3>
+                <a href="https://icon-library.net/icon/javascript-icon-png-9.html" title="Javascript Icon Png #393522"><img src="https://icon-library.net//images/javascript-icon-png/javascript-icon-png-9.jpg" width="150" /></a>
+                <p>A dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages.</p>
+            </div>
+
+            <div class="serviceskill">
+                <h3>Html</h3>
+                <a href="https://icon-library.net/icon/html-icon-12.html" title="Html Icon #217158"><img src="https://icon-library.net//images/html-icon/html-icon-12.jpg" width="130" /></a>
+                <p>HTML stands for Hyper Text Markup Language. It is a formatting language used to define the appearance and contents of a web page. It allows to organize text, graphics, audio, and video on a web page.</p>
+            </div>
+
+            <div class="serviceskill">
+                <h3>Css</h3>
+                <a href="https://icon-library.net/icon/css-3-icon-6.html" title="Css 3 Icon #227980"><img src="https://icon-library.net//images/css-3-icon/css-3-icon-6.jpg" width="95" /></a>
+                <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.</p>
+            </div>
+
+            <div class="serviceskill">
+                <h3>React</h3>
+                <a title="Facebook, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:React-icon.svg"><img width="200" alt="React-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/256px-React-icon.svg.png"></a>
+                <p>React is a front-end library developed by Facebook. It is used for handling the view layer for web and mobile apps. ReactJS allows us to create reusable UI components.</p>
+            </div>
+
+            <div class="serviceskill">
+                <h3>Python</h3>
+                <a href="https://icon-library.net/icon/python-icon-10.html" title="Python Icon #95758"><img src="https://icon-library.net//images/python-icon/python-icon-10.jpg" width="120" /></a>
+                <p>Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language.</p>
+            </div>
+
+            <a href="#projects" class="btn">My Projects</a>
+        </div>
+    </section>
+
+  </body>
 </html>
