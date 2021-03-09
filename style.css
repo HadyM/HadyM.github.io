@@ -156,7 +156,7 @@ nav { display: none; }
     background-color: var(--clr-dark);
     background-image: url(./images/blueflame.gif);
     background-size: cover;
-    background-blend-mode: ;
+    background-blend-mode: lighten;
     color: var(--clr-light);
 }
 
