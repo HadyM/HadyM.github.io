@@ -10,14 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/198181602c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="./index.js" defer></script>
   </head>
   <body>
@@ -49,7 +45,9 @@
       <h1 class="section__title section__title--intro">
         Hi, I am <strong>Hady Mohamed</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">FULL-STACK DEV</p>
+      <p class="section__subtitle section__subtitle--intro">
+        I'm a: <span class="typing"></span>
+      </p>
       <img
         src="./images/HadyProfile.jpeg"
         alt="A picture of Hady Mohamed smiling"
@@ -63,7 +61,12 @@
       <div class="skills">
         <div class="serviceskill">
           <h3>Javascript</h3>
-          <img src="./icons/javascript-logo-svgrepo-com.svg" alt="Javascript Icon" width="100px">
+          <img
+            class="image-icon"
+            src="./icons/javascript-logo-svgrepo-com.svg"
+            alt="Javascript Icon"
+            width="100px"
+          />
           <p>
             A dynamic computer programming language. It is lightweight and most
             commonly used as a part of web pages, whose implementations allow
@@ -73,7 +76,12 @@
 
         <div class="serviceskill">
           <h3>Html</h3>
-          <img src="./icons/html-5-logo-svgrepo-com.svg" alt="Html Icon" width="100px">
+          <img
+            class="image-icon"
+            src="./icons/html-5-logo-svgrepo-com.svg"
+            alt="Html Icon"
+            width="100px"
+          />
           <p>
             HTML stands for Hyper Text Markup Language. It is a formatting
             language used to define the appearance and contents of a web page.
@@ -84,7 +92,12 @@
 
         <div class="serviceskill">
           <h3>Css</h3>
-        <img src="./icons/css-3-logo-svgrepo-com.svg" alt="Css Icon" width="100px">
+          <img
+            class="image-icon"
+            src="./icons/css-3-logo-svgrepo-com.svg"
+            alt="Css Icon"
+            width="100px"
+          />
           <p>
             Cascading Style Sheets, fondly referred to as CSS, is a simple
             design language intended to simplify the process of making web pages
@@ -94,7 +107,12 @@
 
         <div class="serviceskill">
           <h3>React</h3>
-         <img src="./icons/react-logo-svgrepo-com.svg" alt="React Icon" width="100px">
+          <img
+            class="image-icon"
+            src="./icons/react-logo-svgrepo-com.svg"
+            alt="React Icon"
+            width="100px"
+          />
           <p>
             React is a front-end library developed by Facebook. It is used for
             handling the view layer for web and mobile apps. ReactJS allows us
@@ -104,24 +122,28 @@
 
         <div class="serviceskill">
           <h3>Python</h3>
-          <img src="./icons/python-3-logo-svgrepo-com.svg" alt="Python Icon" width="100px">
+          <img
+            class="image-icon"
+            src="./icons/python-3-logo-svgrepo-com.svg"
+            alt="Python Icon"
+            width="100px"
+          />
           <p>
             Python is a general-purpose interpreted, interactive,
             object-oriented, and high-level programming language.
           </p>
         </div>
-
-        <a href="#projects" class="btn">My Projects</a>
       </div>
+      <a href="#projects" class="btn">My Projects</a>
     </section>
 
     <!-- About me -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
       <p class="section__subtitle section__subtitle--about">
-        Full-stack developer & graphic designer based out of NYC
+        Full-stack Developer & Graphic Designer based out of NYC
       </p>
-
+      
       <div class="about-me__body">
         <p>
           I am Full Stack Web Developing Engineer currently studying at Pursuit,
@@ -148,30 +170,29 @@
           all.
         </p>
       </div>
-
+    
       <img
         src="./images/BrainNetworking.jpg"
         alt="Networking Brain Computing"
+        class="about-me__img"
       />
     </section>
 
     <!-- Projects -->
     <section class="my-projects" id="projects">
-      <h2 class="section__title">My Projects</h2>
-      <p class="section__subtitle"></p>
+      <h2 class="section__title section__title--projects">My Projects</h2>
+      <p class="section__subtitle section__subtitle--projects">A selection range of my projects</p>
 
       <div class="portfolio">
-        <a href="#" class="portfolio__item">
+        <a href="https://github.com/HadyM/FSW-Text-Based-Adventure" class="portfolio__item">
           <img
             src="./images/TextBasedAdventure.gif"
             alt="Text Based Adventure Game"
             class="portfolio__gif"
           />
         </a>
-        <a href="https://github.com/HadyM/FSW-Text-Based-Adventure"
-          >Text Based Adventure Game</a
-        >
-        <p>
+        
+        <p class="portfolio__item--p">
           It is a game based on Norse mythology where you have to help Thor save
           Asgard. I organized my ideas by using Trello and implemented the use
           of variables, functions, and logical operators to solve problems. The
@@ -182,17 +203,15 @@
       </div>
 
       <div class="portfolio">
-        <a href="#" class="portfolio__item">
+        <a href="https://github.com/HadyM/FSW-CLI-Snowman" class="portfolio__item">
           <img
             src="./images/SnowmanProject.gif"
             alt="Snowman Guessing Game"
             class="portfolio__gif"
           />
         </a>
-        <a href="https://github.com/HadyM/FSW-CLI-Snowman"
-          >Snowman Guessing Game</a
-        >
-        <p>
+        
+        <p class="portfolio__item--p">
           It is a guessing game similar to Hangman that randomly selects a word
           from a dictionary and gives the user a certain number of guesses to
           find the solution. I created this game using javascript to solve
@@ -205,7 +224,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <a href="mailto:hadymohamed@pursuit.org" class="footer__link"
         >Email Address</a
       >
@@ -214,19 +233,19 @@
           <a
             class="social-list__link"
             href="https://www.linkedin.com/in/hady-mohamed-709307187/"
-            >linkedin</a
+            ><i class="fab fa-linkedin fa-2x"></i></a
           >
         </li>
         <li class="social-list__item">
           <a
             class="social-list__link"
             href="https://twitter.com/Hady_Mohamed_87"
-            >twitter</a
+            ><i class="fab fa-twitter fa-2x"></i></a
           >
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="https://github.com/HadyM"
-            >github</a
+            ><i class="fab fa-github fa-2x"></i></a
           >
         </li>
       </ul>
