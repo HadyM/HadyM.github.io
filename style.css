@@ -133,6 +133,44 @@ h3 {
   margin-bottom: 1em;
 }
 
+/* Splash Screen */
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--clr-accent);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+}
+
+.splash.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--clr-accent);
+  z-index: -10;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
 
 /* Header */
 
@@ -143,7 +181,11 @@ header {
 }
 
 .logo {
-  max-width: 150px;
+  display: flex;
+  max-width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .nav {
