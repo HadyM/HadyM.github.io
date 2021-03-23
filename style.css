@@ -181,12 +181,11 @@ header {
 }
 
 .logo {
-  display: flex;
-  flex-direction: row;
   width: 100px; 
-  /* height: 100%;
-  margin: 0;
-  padding: 0; */
+}
+
+.logo__hm {
+  margin-left: 20px;
 }
 
 .nav {
@@ -457,7 +456,6 @@ text-align: center;
       transform 750ms cubic-bezier(.5, 0, .5, 1),
       opacity 250ms linear;
       /* width: 700px; */
-
 }
 
 .portfolio__item:focus {
@@ -469,8 +467,8 @@ text-align: center;
 .portfolio__item:focus .portfolio__gif {
   transform: scale(1.2);
   opacity: .75;
-
 }
+
 
 /* Adjust this for for mobile */
 
