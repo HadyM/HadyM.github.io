@@ -5,7 +5,7 @@
 }
 
 /* Custom Properties, update these for my own design */
-
+/*Nice use of CSS 'variables'*/
 :root {
   --ff-primary: "Source Sans Pro", sans-serif;
   --ff-secondary: "Source Code Pro", monospace;
@@ -471,6 +471,14 @@ text-align: center;
 
 
 /* Adjust this for for mobile */
+
+/*
+Love to see you've got a start on changing the projects layout for mobile!
+max-width: 300px is quite small - you might want to adjust that breakpoint!
+
+The paragraphs in your skills section look quite nice on mobile - maybe you could use their styles as a guide for
+How to update this media query!
+*/
 
 /* @media (max-width: 300px) {
   .portfolio__item {
