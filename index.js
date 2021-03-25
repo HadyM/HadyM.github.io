@@ -1,5 +1,6 @@
 const splash = document.querySelector('.splash')
 
+// Is it necessary to use this event listener since you used defer?
 document.addEventListener('DOMContentLoaded', (e) => {
     setTimeout(() => {
         splash.classList.add('display-none')
@@ -14,6 +15,8 @@ navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open')
 })
 
+// Could you think of a way to accomplish this with a single event
+// listener rather than an event listener for each nav link?
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         document.body.classList.remove('nav-open')
