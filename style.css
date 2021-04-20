@@ -441,19 +441,17 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(auto));
   align-items: center;
 }
 
 .portfolio__item {
-  background: var(--clr-accent);
-  width: 300px;
+  width: auto;
   overflow: hidden;
 }
 
 .portfolio__gif {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
-  /* width: 700px; */
 }
 
 .portfolio__item:focus {
